@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "resources": [
+    {
+      "id": 1,
+      "name": "Name 1"
+    },
+    {
+      "name": "Name 2 changed",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Name 3"
+    },
+    {
+      "name": "Name 3",
+      "id": 4
+    },
+    {
+      "name": "Name 3",
+      "id": 5
+    },
+    {
+      "name": "New Name",
+      "id": 6
+    }
+  ]
+}
