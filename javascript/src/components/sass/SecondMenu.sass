@@ -1,0 +1,43 @@
+.route
+  &-parent-name 
+    display: flex
+    align-items: center
+    font-size: 15px
+    font-weight: 600
+    color: black
+    padding: 10px 19px
+    border-bottom: 1px solid var(--light-gray)
+    margin: 0 -19px
+    width: calc(100% + 54px)
+
+    svg 
+      fill: var(--secondary)
+      margin: 0 7px 5px 0
+
+  &-inner-links 
+    padding: 13px 0
+    font-size: 12px
+
+    .menu-link 
+      display: block
+      width: auto
+      padding: 10px 17px
+      margin: 7px 0
+      color: #7d89a4
+      text-decoration: none
+      transition: all 0.3s
+      background-color: transparent
+      border-radius: 6px
+
+      &:hover 
+        color: black
+        background-color: var(--light-gray)
+
+    a 
+      &.router-link-exact-active,
+      &.router-link-active,
+      &.menu-link.active 
+        display: block
+        background-color: var(--secondary)
+        color: white
+        pointer-events: none

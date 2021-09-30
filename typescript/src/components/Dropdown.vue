@@ -1,0 +1,35 @@
+<template>
+  <div class="dropdown aligned-right" :class="{ opened: opened }">
+    <div class="dropdown-overlay" @click="toggle" />
+
+    <div class="dropdown-trigger" @click="toggle">
+      <slot name="dropdownTrigger" />
+    </div>
+
+    <div class="dropdown-content" @click="toggle">
+      <slot name="dropdownContent" />
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "Dropdown",
+
+  data() {
+    return {
+      opened: false,
+    };
+  },
+
+  methods: {
+    toggle() {
+      this.opened = !this.opened;
+    },
+  },
+});
+</script>
+
+<style src="./sass/Dropdown.sass" lang="sass" />

@@ -1,0 +1,58 @@
+.menu-link 
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  text-decoration: none
+  color: var(--gray)
+  padding: 17px 23px 17px 19px
+  transition: all 0.3s ease-out
+  border-left: solid 3px transparent
+
+  & > span 
+    font-size: 12px
+    margin-top: 0.5em
+    width: max-content
+    max-width: 90px
+    text-align: center
+
+  svg 
+    fill: var(--nav-link-icon)
+    transition: all 0.3s
+
+  &:hover,
+  &:focus,
+  &:active 
+    background-color: rgba(255, 255, 255, 0.2)
+    color: white
+
+    svg,
+      fill: white
+
+  &-text 
+    display: inline-block
+    text-align: center
+
+  > .arrow 
+    transform: translateX(10px)
+
+  &.router-link-active
+    pointer-events: none
+    color: white
+    background-color: var(--primary-focused)
+    position: relative
+    border-left-color: var(--secondary)
+
+    > .arrow 
+      width: 0
+      height: 0
+      border-top: 8px solid transparent
+      border-bottom: 8px solid transparent
+      border-right: 8px solid #fff
+      position: absolute
+      right: 0
+      top: 40%
+      transform: translateX(0)
+
+    svg 
+      fill: white
