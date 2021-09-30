@@ -1,0 +1,89 @@
+.dropdown 
+  position: relative
+  display: flex
+  flex-direction: column
+  transition: all .3s
+  border-radius: 10px
+
+  &-trigger 
+    position: relative
+    z-index: 2
+    cursor: pointer
+
+  &-content 
+    position: absolute
+    left: 0
+    top: calc(100% + 4px)
+    background-color: white
+    border-radius: 14px
+    overflow: hidden
+    min-width: 176px
+    box-shadow: rgba(121, 133, 200, .23) 0 0 8px
+    transform: rotateY(-25deg) translateY(-55px) scale(0.7)
+    z-index: -1
+    opacity: 0
+    transition: all .3s
+
+  &-item 
+    display: block
+    text-decoration: none
+    padding: 15px 28px 12px
+    background-color: transparent
+    color: var(--dark-gray)
+    transition: all .3s
+    white-space: nowrap
+    cursor: pointer
+
+    &.disabled 
+      pointer-events: none
+      color: var(--secondary)
+      font-weight: 600
+
+    &:hover, 
+    &:focus, 
+    &:active 
+      background-color: var(--light-gray)
+      color: black
+
+  &-overlay 
+    height: 100vh
+    position: fixed
+    top: -100vh
+    left: 0
+    right: 0
+    transition: all .3s
+    background-color: transparent
+    z-index: 2
+
+  &-trigger-field 
+    display: flex
+    align-items: center
+    padding: 13px 15px 12px
+    border-radius: 9px
+    font-size: 11px
+
+    img 
+      display: inline-block
+      margin-right: 7px
+
+  &.opened 
+
+    .dropdown-trigger-field 
+      background-color: var(--dropdown-focused)
+
+    .dropdown-content 
+      transform: rotateY(0) translateY(4px) scale(1)
+      opacity: 1
+      z-index: 3
+
+    .dropdown-overlay 
+      top: 0
+
+  /* For dropdowns with aligning parameter and class */
+
+  &.aligned-right 
+    align-items: flex-end
+
+    .dropdown-content 
+      left: unset
+      right: 0

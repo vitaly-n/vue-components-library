@@ -1,0 +1,67 @@
+:root {
+  /* Main colors */
+  --primary: #293A5E;
+  --primary-focused: #293A5E;
+  --secondary: #44ccd1;
+  --secondary-focused: #29979b;
+  --blue-focused: #638bf180;
+  --nav-link-icon: #B3B9C7;
+  --dropdown-focused: #e7f9fa;
+  --light-gray: #F1F2F9;
+  --gray: #959FB5;
+  --dark-gray: #4C5B7A;
+  --very-dark-gray: #4C5B7A;
+  --red: #ED737B;
+  --hover-red: #d4545c;
+  --blue: #225DF4;
+  --content-background: #F7F7FB;
+  --border-error: rgba(237, 115, 123, 0.5);
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./font/Mont-Black.eot');
+  src: local('Mont Black'), local('Mont-Black'), url('./font/Mont-Black.eot?#iefix') format('embedded-opentype'), url('./font/Mont-Black.woff2') format('woff2'), url('./font/Mont-Black.woff') format('woff'), url('./font/Mont-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./font/Mont-Bold.eot');
+  src: local('Mont Bold'), local('Mont-Bold'), url('./font/Mont-Bold.eot?#iefix') format('embedded-opentype'), url('./font/Mont-Bold.woff2') format('woff2'), url('./font/Mont-Bold.woff') format('woff'), url('./font/Mont-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./font/Mont-SemiBold.eot');
+  src: local('Mont SemiBold'), local('Mont-SemiBold'), url('./font/Mont-SemiBold.eot?#iefix') format('embedded-opentype'), url('./font/Mont-SemiBold.woff2') format('woff2'), url('./font/Mont-SemiBold.woff') format('woff'), url('./font/Mont-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./font/Mont-Thin.eot');
+  src: local('Mont Thin'), local('Mont-Thin'), url('./font/Mont-Thin.eot?#iefix') format('embedded-opentype'), url('./font/Mont-Thin.woff2') format('woff2'), url('./font/Mont-Thin.woff') format('woff'), url('./font/Mont-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./font/Mont-Regular.eot');
+  src: local('Mont Regular'), local('Mont-Regular'), url('./font/Mont-Regular.eot?#iefix') format('embedded-opentype'), url('./font/Mont-Regular.woff2') format('woff2'), url('./font/Mont-Regular.woff') format('woff'), url('./font/Mont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./font/Mont-Light.eot');
+  src: local('Mont Light'), local('Mont-Light'), url('./font/Mont-Light.eot?#iefix') format('embedded-opentype'), url('./font/Mont-Light.woff2') format('woff2'), url('./font/Mont-Light.woff') format('woff'), url('./font/Mont-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
